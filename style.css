@@ -1,28 +1,13 @@
-.footer 
-{
-    padding: 48px 0 32px;
-}
-
-/* .footer-conteneur {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-  background-color: #F5EEE2;
-  display: gird;
-} */
 
 .pied-haut
 {
-    display: flex;
-    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    
+    background-color: #F4ECDE ;
     justify-content: center;
     padding: 40px 30px 0 30px;
-    /* align-items: center; */
     gap: 30px;
-    /* max-width: 1100px; */
-    /* margin: 50px auto; */
-
 }
 
 .footer-button
@@ -44,6 +29,27 @@
 .color
 {
     color: #C8962E;
+}
+
+
+.call-icon
+{
+    width: 20px;
+
+}
+
+
+
+.icons{
+background-color: #FFF9F0;
+display: flex;
+justify-items: center;
+padding: 8px;
+border-radius: 50%;
+}
+.icon{
+    width: 1em;
+    height: 1em;
 }
 
 .footer-icons
