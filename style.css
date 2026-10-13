@@ -3,13 +3,16 @@
 {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    
+
     background-color: #F4ECDE ;
     justify-content: center;
     padding: 40px 30px 0 30px;
     gap: 30px;
 }
-
+.footer-h2{
+    display:flex;
+    gap: 4px;
+}
 .footer-button
 {
     color: antiquewhite;
@@ -23,7 +26,8 @@
 {
     color: #B5562F;
     background-color: burlywood;
-    border-radius: 5px;
+    border-radius: 4em;
+    padding: 2px 4px 0px 4px;
 }
 
 .color
