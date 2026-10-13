@@ -1,0 +1,304 @@
+/* 1. Box-sizing rule for intuitive sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins */
+* {
+  margin: 0;
+}
+
+/* 3. Allow percentage-based heights and smooth typography */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+}
+
+/* 4. Improve media defaults (prevents images from overflowing containers) */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Inherit fonts for form inputs so they don't look weird */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 6. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.header .container {
+  padding: 22px 30px;
+  background: linear-gradient(45deg, #fee9c8, #ffffff00);
+}
+.header .container .header-content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 18px 0px;
+}
+.header .container .breadcrumb {
+  width: 500px;
+  margin: 20px 0px;
+}
+.header .container .breadcrumb > p {
+  font-size: 11px;
+  font-weight: 500;
+}
+.header .container .breadcrumb .breadcrumb-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin: 17px 0px;
+  color: #5d4200;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 15px;
+  font-size: 13px;
+  background-color: #ffdda7;
+}
+.header .container .breadcrumb .breadcrumb-text::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #7c5700;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.header .container .header-content .organic-fair-trade {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #f4ede1;
+  padding: 10px;
+  border-radius: 11px;
+}
+.header .container .breadcrumb p:first-of-type {
+  color: #294133;
+}
+
+.container .breadcrumb .introduction .title {
+  color: #183324;
+  margin-bottom: 10px;
+}
+
+main .categories {
+  background-color: #ede6db;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+.category-active {
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 10px;
+  background-color: black;
+  border-radius: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+main .categories .category-item {
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 10px;
+  background-color: #e1e1e1;
+  border-radius: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+main .categories .category-item > p {
+  color: #434343;
+  font-weight: 600;
+}
+.number-active {
+  background-color: #3a3a3a;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #a4a4a4;
+}
+main .categories .category-item .number {
+  background-color: #d6d6d6;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #434343;
+  font-weight: 700;
+}
+main .main-content {
+  margin-top: 30px;
+  font-weight: 400;
+  font-family: math;
+  display: flex;
+  justify-content: space-around;
+}
+main .main-content .filter {
+  width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+main .main-content .content .products {
+  display: flex;
+  gap: 15px;
+}
+main .main-content .content .products .product {
+  width: 201px;
+  height: 500px;
+  border: 1px solid;
+  padding: 10px;
+}
+main .main-content .content .products .product .product-details {
+  height: fit-content;
+  background-color: #e7e7e7;
+}
+main .main-content .content .products .product .image .text {
+  position: absolute;
+  top: 0;
+  font-size: 11px;
+  background-color: #d4d4d4;
+  padding: 0px 6px;
+  border-radius: 10px;
+  text-align: center;
+  color: #3c3c3c;
+}
+main .main-content .content .product .reviews {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .main-content .content .product .feedbacks {
+  color: gray;
+}
+main .main-content .content .product p.review::before {
+  content: url(icons/etoile.svg);
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 4px;
+}
+main .main-content .content .products .product .image {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+main .main-content .content .products .product .image .heart {
+  position: absolute;
+  width: 19px;
+  background-color: #e9e7e5;
+  border-radius: 50%;
+  padding: 2px;
+  top: 0;
+  right: 0;
+}
+main .main-content .filter .filtres p {
+  padding: 20px;
+  background-color: #ede6db;
+  color: #183324;
+  font-size: 29px;
+  font-weight: 500;
+}
+main .main-content .filter .certifications,
+main .main-content .filter .capacities {
+  padding: 20px;
+  background-color: #f9f2e6;
+}
+main .main-content .filter .capacities .capacities-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .main-content .filter .certifications .certificate,
+main .main-content .filter .capacities .capacity {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+  gap: 12px;
+}
+
+main .main-content .filter .capacities .capacity {
+  background-color: #f4ede1;
+  padding: 5px 23px;
+  border-radius: 14px;
+}
+main .main-content .filter .certifications .certificate-title,
+main .main-content .filter .capacities .capacity-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+main .main-content .filter .certifications .certificate p:nth-of-type(2) {
+  color: gray;
+}
+
+main .main-content .filter .capacities .capacity p:nth-of-type(2) {
+  color: gray;
+}
+main .main-content .filter .capacities .capacity-title p {
+  font-size: 25px;
+  color: #183324;
+}
+main .main-content .filter .certifications .certificate-title > p {
+  font-size: 25px;
+  color: #183324;
+}
+main .main-content .filter .certifications .certificate .checkbox,
+main .main-content .filter .capacities .capacity .checkbox {
+  width: 19px;
+  height: 19px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+main .main-content .filter .certifications .certificate .isCheckboxActive,
+main .main-content .filter .capacities .capacity .isCheckboxActive {
+  background-color: #183324;
+  width: 19px;
+  height: 19px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+main .main-content .filter .certifications .certificate-title img {
+  width: 20px;
+  height: 20px;
+  color: orange;
+  display: inline-block;
+}
