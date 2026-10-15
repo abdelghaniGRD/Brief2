@@ -53,7 +53,7 @@ h6 {
 }
 
 main {
-  background: linear-gradient(45deg, #f9f2e6, #f9e0afe8);
+  background: linear-gradient(354deg, #ffffff, #ffe1a6e8);
 }
 .header .container {
   padding: 22px 30px;
@@ -65,7 +65,7 @@ main {
   margin: 18px 0px;
 }
 .header .container .breadcrumb {
-  width: 500px;
+  width: 50%;
   margin: 20px 0px;
 }
 .header .container .breadcrumb > p {
@@ -99,8 +99,38 @@ main {
   right: 0;
   bottom: 0;
   background: #f4ede1;
-  padding: 10px;
+  padding: 16px;
   border-radius: 11px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header
+  .container
+  .header-content
+  .organic-fair-trade
+  .purity
+  p:nth-of-type(1) {
+  color: #7c5700;
+  font-weight: 700;
+}
+
+.header
+  .container
+  .header-content
+  .organic-fair-trade
+  .purity
+  p:nth-of-type(2) {
+  color: #2f493a;
+  font-weight: 700;
+}
+.header .container .header-content .organic-fair-trade .green-image {
+  background-color: #2f493a;
+  border-radius: 9px;
+}
+
+.header .container .header-content .organic-fair-trade img {
+  width: 41px;
 }
 .header .container .breadcrumb p:first-of-type {
   color: #294133;
@@ -184,7 +214,7 @@ main .main-content .content .products {
   row-gap: 24px;
 }
 main .main-content .content .product {
-  width: 257px;
+  width: 249px;
   height: 490px;
   flex-grow: 1;
   max-width: 320px;
@@ -222,10 +252,11 @@ main
   .discover {
   background-color: #252525;
   color: white;
-  padding: 10px 16px;
+  padding: 7px 10px;
   width: fit-content;
   border-radius: 15px;
   font-size: 20px;
+  align-content: center;
 }
 main .main-content .content .products .product-details .action-buttons .title {
   color: #737373;
@@ -345,7 +376,7 @@ main .main-content .filter .certifications .certificate-title,
 main .main-content .filter .capacities .capacity-title {
   display: flex;
   align-items: center;
-  justify-content: center;
+
   gap: 10px;
 }
 main .main-content .filter .certifications .certificate p:nth-of-type(2) {
