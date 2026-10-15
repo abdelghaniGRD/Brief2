@@ -1,8 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #30261f;
-    background-color: #fffdf8;
+    color: #30261f;   
 }
 
 main {
@@ -18,7 +17,6 @@ main {
     margin: 30px 0;
 }
 
-
 .containir {
     display: flex;
     flex-direction: row;
@@ -32,13 +30,21 @@ main {
     min-width: 0;
     box-sizing: border-box;
 }
-
 .image-principale {
-    display: block;
+    position: relative;
+}
+.image-principale img{
     width: 100%;
     height: 430px;
 }
-
+.RÉCOLTE-TERROIR {
+    left: 16px;
+    top: 8px;
+    background-color: #666;
+    display: inline-block;
+    position: absolute;
+    border-radius: 25rem;
+}
 /* Petites images */
 
 .galerie {
@@ -55,9 +61,29 @@ main {
     border-radius: 5px;
     cursor: pointer;
 }
-
-
-.certification,
+.par{
+    display: flex;
+    gap: 10px;
+}
+.par1{
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #666;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 2px 2px;
+}
+.par2{
+    color: rgb(182, 76, 76);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: rgb(255, 153, 115);
+    border-radius: 15px;
+    display: inline-block;
+}
 .surtitre {
     color: #6b4f3a;
     font-size: 12px;
@@ -75,13 +101,30 @@ main {
     color: #9a7137;
     font-size: 14px;
 }
-
+.cnt-prix{
+    display: flex;
+    justify-content: space-between;
+    background-color: #beb5ab;
+    padding: 8px;
+    border-radius: 30rem;
+    margin-top: auto;
+}
+.cnt-prix h2 , .cnt-prix p{
+    margin: 10px;
+}
 .prix {
     color: #6b4f3a;
     font-size: 30px;
     margin-bottom: 5px;
 }
-
+.stock{
+    background-color: rgb(152, 208, 67);
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+    margin: 8px;
+    padding: 8px;
+}
 .taxe {
     color: #81766a;
     font-size: 13px;
@@ -91,7 +134,15 @@ main {
     line-height: 1.8;
     margin: 25px 0;
 }
-
+.format_tit{
+    display: flex;
+    justify-content: space-between;
+}
+.format_tit p:not(:first-child){
+    color: #8f694c;
+    font-size: 15px;
+    line-height: 1.0px;
+}
 .titre-format {
     font-size: 12px;
     font-weight: bold;
@@ -132,8 +183,22 @@ main {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 8px;
 }
-
+.qte{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5f0ef;
+    height: 35px;
+    min-width: 75px;
+    border-radius: 5px;
+}
+.qte button{
+    background: none;
+    border: none;
+    color: #444;
+    cursor: pointer;
+}
 .btn-panier {
     margin-left: 10px;
 }
@@ -152,8 +217,17 @@ main {
 .btn-panier:hover {
     background-color: #503a2b;
 }
-
-
+.Achat button{
+    width: 100%;
+    margin-top: 22px;
+    padding: 15px;
+    background-color: #8f847b;
+    color: white;
+    border: none;
+    border-radius: 20rem;
+    font-size: 15px;
+    cursor: pointer;
+}
 .engagements {
     display: flex;
     gap: 12px;
@@ -185,7 +259,23 @@ main {
     border-radius: 8px;
 }
 .surtitre p{
-    color: black;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+}
+.surtitre {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.CERTIFIÉ-IGP{
+ color: black;
+  background-color: #666;
+  border-radius: 4em;
+  padding: 2px;
+  display: inline-block;
+  margin: 0;
 }
 .infos-terroir h3 {
     font-size: 12px;
@@ -194,7 +284,19 @@ main {
 .infos-terroir {
     display: grid;
    grid-template-columns: repeat(2, 1fr); 
-    
+    gap: 12px;
+}
+.passeport > div:last-child{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 12px;
+    gap: 10px;
+    padding-top: 8px;
+}
+.passeport > div:last-child p{
+    font-size: 12px ;
+    margin: 0;
 }
 
 /* sous titre */
@@ -218,13 +320,12 @@ main {
 
 /*proprietes  */
 .proprietes {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 30px auto;
     padding: 30px 24px;
     background-color: #f8f1e5;
     border-radius: 14px;
-    font-family: Arial, sans-serif;
     color: #33382f;
     box-sizing: border-box;
 }
@@ -239,13 +340,13 @@ main {
 }
 
 .description-propritie h3 {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     margin: 0 0 14px;
 }
 
 .intro {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.6;
     color: #555;
     margin-bottom: 14px;
@@ -264,13 +365,13 @@ main {
 }
 
 .cartes-proprietes h4 {
-    font-size: 12px;
+    font-size: 14px;
     margin: 0 0 5px;
     font-weight: 600;
 }
 
 .cartes-proprietes article p {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.5;
     color: #666;
     margin: 0;
@@ -294,7 +395,7 @@ main {
 }
 .co-avis article{
     display: flex;
-    background-color: #e1e1e1;
+    background-color: #d1b990cd;
    border-radius: 9px;
    flex-direction: column;
    padding: 20px ;
@@ -303,10 +404,14 @@ main {
 article p:first-child{
     color: #503a2b;
 }
-article  p :not(:first-child){
-    font-size: 8px;
+article p:not(:first-child){
+    font-size: 13px;
     line-height: 1.5;
     margin: 0;
+}
+article h3{
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .co-avis .profil{
@@ -314,12 +419,30 @@ article  p :not(:first-child){
     padding-top: 12px;
     border-top: 1px solid #654f41;
 }
+.tit-ps{
+    display: flex;
+    justify-content: space-between;
+}
+.tit-ps p {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #8b682b;
+    margin-bottom: 7px;
+}
+
+.tit-ps h2 {
+    font-size: 15px;
+    margin: 0;
+    font-weight: 600;
+}
 .depose{
   color: black;
   background-color: rgb(109, 97, 82);
   border-radius: 4em;
   padding: 8px;
   display: inline-block;
+  margin: 0;
 }
 
 
@@ -346,11 +469,12 @@ background-color: #e1e1e1;
 }
 .position {
     position: absolute;
-    top: 10px;
-    right:  25%;
+    top: 8px;
+    left: 16px;
     background-color: #aeacaa;
-    padding: 6px ;
-    border-radius: 6px;
+    padding: 4px ;
+    border-radius: 18px;
+    font-size: 12px;
 }
 .carte p{
       font-size: 16px;

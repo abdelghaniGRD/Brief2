@@ -51,7 +51,10 @@
 
         <!-- Galerie des images -->
         <div class="image">
-            <img class="image-principale" src="image/fiche-produit/galerie-01-flacon.jpg" alt="Huile d'Argan Cosmétique">
+          <div class="image-principale">
+            <img src="image/fiche-produit/galerie-01-flacon.jpg" alt="Huile d'Argan Cosmétique">
+            <p class="RÉCOLTE-TERROIR">RÉCOLTE TERROIR</p>
+          </div>  
 
             <div class="galerie">
                 <img src="image/fiche-produit/galerie-02-texture-pipette.jpg"
@@ -71,6 +74,7 @@
     <section class="passeport">
         <div class="surtitre">
             <p>PASSEPORT TERROIR • LOT #ARG-2024-88</p>
+            <p class="CERTIFIÉ-IGP">CERTIFIÉ IGP</p>
         </div>
 
         <div class="infos-terroir">
@@ -104,28 +108,35 @@
 
         <!-- Informations du produit -->
         <div class="info">
-            <p class="certification">CERTIFIÉ BIO ECOCERT</p>
+          <div class="par">
+            <p class="par1">CERTIFIÉ BIO ECOCERT</p>
+            <p class="par2">100% PURE & VIERGE</p>
+            <p class="par1">PRESSÉE À FROID</p>
+          </div>
+            
 
             <h1>Huile d'Argan Cosmétique Extra Vierge</h1>
 
             <p class="note">★★★★⯩ 4.9/5 (142 avis vérifiés)</p>
-
-            <h2 class="prix">180 MAD</h2>
-            <p class="taxe">TVA incluse • En stock</p>
+            <div class="cnt-prix">
+              <div>
+                 <h2 class="prix">180 MAD</h2>
+                 <p class="taxe">TVA incluse • Rémunération directe reversée aux artisanes</p>
+              </div>
+            <div class="stock">
+               <p>• En stock</p>
+            </div>
+            </div>
+           
 
             <p class="description">
-                Élixir régénérant d'une pureté absolue, naturellement gorgé
-
-d'acides gras essentiels (Oméga-6 et 9) et de vitamine E
-
-protectrice. Pressé patiemment à froid par nos coopératrices, il
-
-revitalise les tissus cutanés, illumine le teint, assouplit la fibre
-
-capillaire et préserve la jeunesse de la peau.
+                Élixir régénérant d'une pureté absolue, naturellement gorgé d'acides gras essentiels (Oméga-6 et 9) et de vitamine E protectrice. Pressé patiemment à froid par nos coopératrices, il revitalise les tissus cutanés, illumine le teint, assouplit la fibre capillaire et préserve la jeunesse de la peau.
             </p>
-
-            <p class="titre-format">CHOISISSEZ VOTRE FORMAT</p>
+            <div class="format_tit">
+              <p class="titre-format">CHOISISSEZ VOTRE FORMAT</p>
+              <p>flacon 100 ml (cure 2 mois)</p>
+            </div>
+            
 
             <div class="formats">
                 <div class="format">
@@ -144,12 +155,16 @@ capillaire et préserve la jeunesse de la peau.
                 </div>
             </div>
  <div class="quantite-panier">
-    <button>-</button>
-    <span>1</span>
+  <div class="qte">
     <button>+</button>
+    <span>1</span>
+    <button>-</button>
+  </div>
     <button class="btn-panier">Ajouter au panier — 180 MAD</button>
 </div>
-           
+    <div class="Achat">
+      <button>Commander en 1 clic (Achat express)</button>
+    </div> 
             <div class="engagements">
                 <div>
                     <strong>Livraison 48h</strong>
@@ -234,9 +249,12 @@ capillaire et préserve la jeunesse de la peau.
 
   <!-- Avis -->
      <section class="avis">
-      <div class="tit">
+      <div class="tit-ps">
+        <div>
          <h2>RETOURS DEXPÉRENCE</h2>
-        <p>Avis de notre communauté</p>
+         <p>Avis de notre communauté</p>
+        </div>
+        
         <h3 class="depose">Déposer un témoignage</h3>
       </div>
         <div class="co-avis">
@@ -298,8 +316,8 @@ capillaire et préserve la jeunesse de la peau.
           </div>
         </article>
         <article class="prs">
-          <p class="position">TERROIR GOURMAND</p>
           <img src="image/fiche-produit/huile-argan-culinaire-03.jpg" alt="image">
+           <p class="position">TERROIR GOURMAND</p>
           <div class="carte">
             <h5>Gastronomie • 250 ml</h5>
             <h3>Huile d'Argan Culinaire Torréfiée</h3>
@@ -308,8 +326,8 @@ capillaire et préserve la jeunesse de la peau.
           </div>
         </article>
         <article class="prs">
-          <p class="position">RECETTE ANCESTRALE</p>
           <img src="image/fiche-produit/amlou-amandes-miel-03.jpg" alt="image">
+          <p class="position">RECETTE ANCESTRALE</p>
           <div class="carte">
             <h5>Pâte à Tartiner • 200 g</h5>
             <h3>Amlou Pur aux Amandes & Miel d'Oranger</h3>
