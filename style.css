@@ -1,5 +1,5 @@
 
-.Accueil-icons
+.hero-icons
 {
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@
 {
     width: 15px;
 }
-.Accueil-title
+.hero-title
 {
     color: whitesmoke;
     font-size: 1.6em;
@@ -31,15 +31,22 @@
 {
     display: flex;
     color: #F4ECDE;
-    gap: 5px;
+    gap: 10px;
     position: relative;
     bottom: 2em;
 }
+.sous-title-1
+{
+    font-size: 1.6em;
+    letter-spacing: -3px;
+    color: #FFE0A3;
+}
+
 .buttons{
     display: flex;
     gap: 6px;
 }
-.Accueil-p
+.hero-p
 {
     /* justify-content: left; */
     width: 50%;
@@ -51,52 +58,260 @@
 
 .button-produits
 {
+    width: 15em;
+    height: 3em;
+    align-items: center;
+
     background-color: darkcyan;
-    /* opacity: 0.5; */
-    color: darkslategray;
-    padding: 5px 10px 5px 10px;
     border-radius: 10%;
-    margin: 5px;
+    color: darkslategray;
+    /* opacity: 0.5; */
+
+    margin: 5em;
+    margin-top: 2em;
 }
 .button-histoire
 {
+    width: 15em;
+    height: 3em;
+
     display: flex;
-    gap: 5px;
-    background-color: darkgray;
+    gap: 1em;
+    align-items: center;
+    align-self: center;
+
+    background-color: #FFE0A3;
     color: black;
-    padding: 5px 10px 5px 10px;
     border-radius: 20%;
+
     margin: 5px;
+    margin-top: 2em;
 }
 .icon-fleche
 {
     width: 15px;
 }
 
-.icon-certifie
-{
-    display: flex;
-    gap: 5px;
-}
-.hero-certifie
+.icon-certifie-home
 {
     display: flex;
     gap: 10px;
+    margin-left: 8em;
+
+    background-color: #FFE0A3;
+    border-radius: 1em;
+
+}
+.hero-certifie-home
+{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+
+    gap: 10px;
+    margin-top: 2em;
 }
 .certifiee
 {
     width: 20px;
 }
+
 .blocks
 {
-    background-color: bisque;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1em;
+    margin: 2em;
+    position: relative;
+    bottom: 3em;
+}
+.block
+{
+    background-color: whitesmoke;
+    border-radius: 1em;
+    background-size: 3em;
 }
 
-.icon-diversite
+.icon-blocks
 {
-    /* background-color: ; */
+    background-color: burlywood;
+    border-radius: 1em;
+    margin: 2em;
+    width: 15%;
+
 }
+.hand-icon
+{
+    width: 16%;
+    background-color: burlywood;
+    border-radius: 1em;
+    margin: 2em;
+}
+.inside-blocks
+{
+    display: grid;
+    grid-column: auto;
+    margin: 1em;
+}
+
+
+.background
+{
+    background-color:#F4ECDE;
+    position: relative;
+    bottom: 1em;
+}
+
+.home-title
+{
+    margin: 1em;
+}
+.home-p
+{
+    display: flex;
+    margin: 1em;
+}
+.etoile
+{
+    display: flex;
+    gap: 1em;
+    margin: 1em;
+}
+.prduct-home-1
+{
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    gap: 0.5em
+}
+.home-a
+{
+    /* position: absolute; */
+    background-color: #FFE0A3;
+    border-radius: 1em;
+
+    display: flex;
+
+    margin: 1em;
+    margin-bottom: 3em;
+    margin-left: 40em;
+    width: 20em;
+    padding: 0 1em 0 1em;
+
+}
+
+.home-topblock
+{
+    position: absolute;
+    margin-top: 100em;
+
+    background-color: darkgray;
+}
+
+/* .pic-block1
+{
+    width: 16em;
+    height: 10em;
+    /* overflow: hidden;
+    position: relative;
+
+} 
+.pic-block1 img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+} */
+
+.home-topblock
+{
+    position: absolute;
+    background-color:darkgray;
+    color: azure;
+}
+
+.huile-img1
+{
+    position: relative;
+
+    max-width: 100%;
+    width: 20em;
+    height: 12em;
+    border-radius: 1em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.huile-img2
+{
+    position: relative;
+
+    max-width: 100%;
+    width: 20em;
+    height: 12em;
+    border-radius: 1em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.huile-img3
+{
+    position: relative;
+
+    max-width: 100%;
+    width: 20em;
+    height: 12em;
+    border-radius: 1em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.huile-img4
+{
+    position: relative;
+
+    max-width: 100%;
+    width: 20em;
+    height: 12em;
+    border-radius: 1em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-prix
+{
+    margin: 1em;
+    margin-top: 3em;
+    
+}
+.home-productinfo
+{
+    margin: 1em;
+    align-items: center;
+}
+.home-achat
+{
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+.home-panier-button
+{
+    background-color: #FFE0A3;
+    border-radius: 1em;
+    margin: 1em;
+    margin-left: 8em;
+}
+
 
 
 
@@ -107,7 +322,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     background-color: #F4ECDE ;
-    justify-content: center;
+    justify-content: center; 
     padding: 40px 30px 0 30px;
     gap: 30px;
 }
@@ -174,11 +389,11 @@ border-radius: 50%;
     backface-visibility: visible;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: scroll;
     padding: 4em 2.6em;
     position: relative;
     width: 100%;
+    height: 40em;
     box-sizing: border-box;
-    min-height: auto;
+    /* min-height: auto; */   
 }
