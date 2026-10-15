@@ -201,6 +201,7 @@ main .main-content {
   display: flex;
   justify-content: space-around;
   gap: 8px;
+  margin-bottom: 70px;
 }
 main .main-content .filter {
   min-width: 327px;
@@ -342,6 +343,47 @@ main .main-content .content .products .product .image .heart {
   top: 10px;
   right: 11px;
 }
+main .main-content .content .pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 45px;
+}
+main .main-content .content .pagination .total-pages {
+  color: #424842;
+}
+main .main-content .content .pagination .pages {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+main .main-content .content .pagination .pages .current-page {
+  padding: 12px 18px;
+  background-color: #183324;
+  color: white;
+  border-radius: 12px;
+}
+main .main-content .content .pagination .pages .page {
+  padding: 12px 18px;
+  background-color: #f4ede1;
+  color: black;
+  border-radius: 12px;
+}
+main .main-content .content .pagination .pages .prev {
+  padding: 10px;
+  background-color: #edeae6;
+  color: #aba8a4;
+  align-content: center;
+  border-radius: 10px;
+}
+
+main .main-content .content .pagination .pages .next {
+  padding: 10px;
+  background-color: #f4ede1;
+  border-radius: 10px;
+}
+
 main .main-content .filter .filtres p {
   padding: 20px;
   background-color: #ede6db;
@@ -417,4 +459,38 @@ main .main-content .filter .certifications .certificate-title img {
   height: 20px;
   color: orange;
   display: inline-block;
+}
+main .commitments {
+  display: flex;
+  justify-content: space-around;
+  background-color: #2f493a;
+  position: relative;
+  height: 110px;
+  align-items: center;
+  color: white;
+}
+
+main .commitments::before {
+  content: "";
+  background-color: #254031;
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  top: 30px;
+}
+
+main .commitments .commitment {
+  position: relative;
+  padding: 12px;
+}
+main .commitments .commitment .img {
+  position: absolute;
+  left: -45px;
+  background-color: #183324;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+main .commitments .commitment .description {
+  color: #9ab8a3;
 }
