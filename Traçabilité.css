@@ -2,14 +2,13 @@
     margin: 0;
     padding: 0;
 }
-
 main {
-    height: 200vh;
+    height: auto;
     background-color: #F5EEE2;
 }
 
 .tracabilite {
-    background-color: #f3e4c9;
+    background-color: #F5EEE2;
     padding: 110px 20px 95px;
     height: auto;
 }
@@ -22,17 +21,20 @@ main {
     align-items: center;
 }
 .tracabilite-icon{
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #fbe2af;
     color: #69501f;
     gap: 8px;
+    border-radius: 15px;
     padding: 7px 15px;
-    width: 40%;
-    font-size: 14px;
+    width: 32%;
+    font-size: 12px;
     margin-bottom: 15px;
 }
+
 .tracabilite-icon img {
     width: 17px;
     height: 17px;
@@ -207,4 +209,241 @@ main {
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
+}
+
+.cert-card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 35px 0;
+    width: 20%;
+    border-radius: 15px;
+    background-color: #F5EEE2;
+    box-shadow: 0 0 10px rgb(205, 201, 201);
+    gap: 20px;
+}
+.icon-cer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+.cert-card p{
+    text-align: center;
+}
+.cert-card strong{
+    font-size: 15px;
+    color: #C8962E;
+}
+.cert{
+    background-color: #f5f3ef;
+    padding: 30px 0 ;
+}
+.cert-container{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.cert-card .green{
+    background-color: #6de8a8;
+}
+.cert-card .yellow{
+    background-color: #ffb516;
+}
+
+.membre {
+    padding: 70px 8%;
+    width: 100%;
+    height: auto;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    gap:20%;
+}
+.head .title-right{
+    color: #30352e;
+    color: #294b38;
+    font-size: 15px;
+    width: 40%;
+}
+.head .title-left p{
+    color: #C8962E;
+}
+.head .title-left h2{
+    color: #30352e;
+    font-size: 30px;
+    margin-top:5px;
+}
+.cards-member{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.card{
+    width: 30%;
+    height: auto;
+    background-color: rgb(217, 218, 218);
+    box-shadow: 0 0 5px rgb(217, 218, 218);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-image img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+.card .card-content{
+    padding: 10px;
+}
+.card-info{
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.card-content .card-role{
+    margin:10px 0 10px 0 ;
+    font-size: 20px;
+}
+.card-content .card-avancer
+{
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: rgb(186, 186, 186);
+    padding:15px 14px;
+}
+.card-footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3px;
+}
+.card-footer img{
+    height: 14px;
+    width: 14px;
+}
+.card-footer p{
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    .cert-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .cert-card{
+        width: 90%;
+    }
+    .head{
+        display: flex;
+        flex-direction: column;
+    }
+    .head .title-left{
+        text-align: center;
+    }
+    .head .title-right{
+        text-align: center;
+        width: 100%;
+    }
+    .cards-member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        gap: 15px;
+    }
+    .cards-member .card{
+        width: 100%;
+    }
+    .tracabilite-icon {
+        border: 1px solid black;
+        width: 60%;
+    }
+    .tracabilite-intro h1 {
+        font-size: 30px;
+    }
+    .tracabilite-intro p {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cert-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 16px;
+    }
+
+    .cert-card {
+        width: 90%;
+    }
+    .ver-form{
+        display: flex;
+        flex-direction: column;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title .dote h3{
+        font-size: 10px;
+    }
+    .title .extra{
+        font-size: 10px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tracabilite-icon {
+        width: 80% !important;
+    }
+    .tracabilite-intro h1 {
+        font-size: 20px;
+    }
+    .tracabilite-intro p {
+        font-size: 12px;
+    }
+    .ver-header .ver-title h2{
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+    .tracabilite-icon {
+        width: 40%;
+    }
 }
