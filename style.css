@@ -9,7 +9,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* background: #F5EEE2; */
+  background: #F5EEE2; 
   color: #1b2e23;
 }
 
@@ -178,3 +178,33 @@ header {
   font-size: 25px;
   color: #2f4a3a;
 }
+
+
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.footer-icons img {
+  width: 20px;
+  height: 20px;
+
+}
+.footer-icons img {
+  width: 20px;
+  height: 20px;
+
+}
+
+.footer-icons p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+
+
+
+
+
