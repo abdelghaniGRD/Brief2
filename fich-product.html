@@ -43,9 +43,13 @@
     <!-- Contenu de ma page -->
    
 <main>
+  <div class="icon-acc">
+     <img src="icon/accueil.svg">
     <p class="fil">
         Accueil / Nos produits / Soins cosmétiques / Huile d'Argan  cosmétique pure 100 ml
     </p>
+  </div>
+    
 
  <div class="containir">
 
@@ -143,7 +147,6 @@
                     <p>50 ml</p>
                     <strong>110 MAD</strong>
                 </div>
-
                 <div class="format format-actif">
                     <p>100 ml</p>
                     <strong>180 MAD</strong>
@@ -156,9 +159,9 @@
             </div>
  <div class="quantite-panier">
   <div class="qte">
-    <button>+</button>
-    <span>1</span>
-    <button>-</button>
+    <button id="btnPlus">+</button>
+    <span id="quantite">1</span>
+    <button id="btnMoin">-</button>
   </div>
     <button class="btn-panier">Ajouter au panier — 180 MAD</button>
 </div>
@@ -247,46 +250,100 @@
 
 </section>
 
-  <!-- Avis -->
-     <section class="avis">
-      <div class="tit-ps">
+ <!-- Avis -->
+<section class="avis">
+
+    <div class="tit-ps">
         <div>
-         <h2>RETOURS DEXPÉRENCE</h2>
-         <p>Avis de notre communauté</p>
+            <h2>RETOURS D'EXPÉRIENCE</h2>
+            <p>Avis de notre communauté</p>
         </div>
-        
-        <h3 class="depose">Déposer un témoignage</h3>
-      </div>
-        <div class="co-avis">
-            <article>
-                <p>★★★★★</p>
-                <h3>Une texture divine et non grasse</h3>
-                <p>J'avais peur de l'effet gras sur mon visage mixte,mais elle pénètre remarquablement vite. Ma peau au réveil est repulpée et lumineuse. L'odeur est très subtile et naturelle.</p>
-             <div class="profil">
-                <h4>Salma</h4>
-                <p>Casablanca</p>
-             </div>
-            </article>
-             <article>
-                <p>★★★★★</p>
-                <h3>Sauveuse de mes cheveux secs</h3>
-                <p>Utilisée en bain d'huile nocturne une fois par semaine. Mes boucles ont retrouvé un ressort et une brillance incomparables. On sent tout de suite la différence avec les huiles industrielles.</p>
-              <div class="profil">
-                <h4>Camille G.</h4>
-                <p>Lyon (France)</p>
-             </div>
-            </article>
-             <article>
-                <p>★★★★⯩</p>
-                <h3>Traçabilité exemplaire</h3>
-                <p> Le packaging est soigné, la bouteille ambrée protège bien le précieux liquide et j'apprécie profondément de savoir précisément de quelle artisane provient le flacon. Félicitations à la coopérative !</p>
-               <div class="profil">
-                <h4>Yassine B.</h4>
-                <p>Rabat</p>
-             </div>
-            </article>
-        </div>
-     </section>
+
+        <button class="depose">
+             Déposer un témoignage
+        </button>
+    </div>
+
+    <div class="co-avis">
+
+        <article class="carte-avis">
+            <div class="avis-note">
+                <span class="etoiles">★★★★★</span>
+                <span class="date-avis">Il y a 4 jours</span>
+            </div>
+
+            <h3>Une texture divine et non grasse</h3>
+
+            <p class="texte-avis">
+                J'avais peur de l'effet gras sur mon visage mixte,
+                mais elle pénètre remarquablement vite. Ma peau
+                au réveil est repulpée et lumineuse. L'odeur est
+                très subtile et naturelle.
+            </p>
+
+            <div class="profil">
+                <div class="avatar">SL</div>
+                <div class="profil-info">
+                    <h4>Salma L.</h4>
+                    <p>Casablanca</p>
+                </div>
+                <span class="achat">ACHAT VÉRIFIÉ</span>
+            </div>
+        </article>
+
+        <article class="carte-avis">
+            <div class="avis-note">
+                <span class="etoiles">★★★★★</span>
+                <span class="date-avis">Il y a 2 semaines</span>
+            </div>
+
+            <h3>Sauveuse de mes cheveux secs</h3>
+
+            <p class="texte-avis">
+                Utilisée en bain d'huile nocturne une fois par
+                semaine. Mes boucles ont retrouvé un ressort et
+                une brillance incomparables. On sent tout de suite
+                la différence avec les huiles industrielles.
+            </p>
+
+            <div class="profil">
+                <div class="avatar">CG</div>
+                <div class="profil-info">
+                    <h4>Camille G.</h4>
+                    <p>Lyon (France)</p>
+                </div>
+                <span class="achat"> ACHAT VÉRIFIÉ</span>
+            </div>
+        </article>
+
+        <article class="carte-avis">
+            <div class="avis-note">
+                <span class="etoiles">★★★★⯩</span>
+                <span class="date-avis">Il y a 3 semaines</span>
+            </div>
+
+            <h3>Traçabilité exemplaire</h3>
+
+            <p class="texte-avis">
+                Le packaging est soigné, la bouteille ambrée
+                protège bien le précieux liquide et j'apprécie
+                profondément de savoir précisément de quelle
+                artisane provient le flacon. Félicitations à
+                la coopérative !
+            </p>
+
+            <div class="profil">
+                <div class="avatar">YB</div>
+                <div class="profil-info">
+                    <h4>Yassine B.</h4>
+                    <p>Rabat</p>
+                </div>
+                <span class="achat"> ACHAT VÉRIFIÉ</span>
+            </div>
+        </article>
+
+    </div>
+</section>
 
      <!-- Produits similaires -->
   <section class="prd-similaires">
@@ -444,4 +501,6 @@
       </div>
     </footer>
 </body>
+
+
 </html>
