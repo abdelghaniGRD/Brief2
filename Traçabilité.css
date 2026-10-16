@@ -65,6 +65,10 @@ main {
     gap: 14px;
     margin-bottom: 20px;
 }
+.ver-icon img{
+    width: 20px;
+    height: 20px;
+} 
 
 .ver-icon {
     width: 46px;
@@ -155,6 +159,7 @@ main {
 .dote {
     display: flex;
     align-items: center;
+    justify-content: baseline;
     gap: 9px;
 }
 .dote img {
@@ -259,7 +264,135 @@ main {
 .cert-card .yellow{
     background-color: #ffb516;
 }
+.fabrication {
+    background-color: #fffaf3;
+    padding: 70px 8%;
+    width: 100%;
+    height: auto;
+}
 
+.fabheader {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.fabheader span {
+    color: #8c6b22;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.fabheader h2 {
+    font-size: 36px;
+    color: #253d2d;
+    margin: 8px 0;
+}
+
+.fabheader p {
+    color: #666;
+    font-size: 15px;
+    max-width: 650px;
+    margin: auto;
+}
+
+.fabcards {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+.etape {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.etape-texte {
+    flex: 1;
+}
+
+.etape .one,
+.etape .three,
+.etape .five {
+    text-align: right;
+}
+
+.etape-texte h3 {
+    font-size: 24px;
+    color: #253d2d;
+    margin: 15px 0;
+}
+
+.etape-texte p {
+    font-size: 15px;
+    color: #666;
+}
+
+.etape-image {
+    flex: 1;
+    position: relative;
+    min-width: 0;
+}
+
+.etape-image img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.numero {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.etape .une .numero {
+    left: -15px;
+    right: auto;
+}
+
+.number1 {
+    background-color: #253d2d;
+}
+
+.number2 {
+    background-color: #947000;
+}
+
+.number3 {
+    background-color: #743116;
+}
+
+.etape-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.etape-badge.vert {
+    background-color: #d4e9d9;
+}
+
+.etape-badge.jaune {
+    background-color: #fbe3b4;
+}
+
+.etape-badge.rose {
+    background-color: #f8ddd2;
+}
 .membre {
     padding: 70px 8%;
     width: 100%;
@@ -339,13 +472,14 @@ main {
     font-size: 14px;
 }
 
-
-
-
-
-
-
-
+.line-ver{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #000000;
+}
 
 @media (max-width: 700px) {
     .cert-container {
@@ -382,8 +516,7 @@ main {
         width: 100%;
     }
     .tracabilite-icon {
-        border: 1px solid black;
-        width: 60%;
+        width: 60% !important;
     }
     .tracabilite-intro h1 {
         font-size: 30px;
@@ -401,7 +534,6 @@ main {
         grid-template-rows: auto;
         gap: 16px;
     }
-
     .cert-card {
         width: 90%;
     }
@@ -438,7 +570,6 @@ main {
     .ver-header .ver-title h2{
         font-size: 15px;
     }
-
 }
 
 
