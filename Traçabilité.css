@@ -1,0 +1,580 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+main {
+    height: auto;
+    background-color: #F5EEE2;
+}
+
+.tracabilite {
+    background-color: #F5EEE2;
+    padding: 110px 20px 95px;
+    height: auto;
+}
+
+.tracabilite-intro {
+    max-width: 850px;
+    margin: 0 auto 55px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tracabilite-icon{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbe2af;
+    color: #69501f;
+    gap: 8px;
+    border-radius: 15px;
+    padding: 7px 15px;
+    width: 32%;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.tracabilite-icon img {
+    width: 17px;
+    height: 17px;
+}
+.tracabilite-intro h1 {
+    font-size: 40px;
+    color: #203b2d;
+    margin-bottom:15px; 
+}
+
+.tracabilite-intro p {
+    font-size: 21px;
+    color: #62645e;
+    margin: 0 auto;
+    max-width: 700px;
+}
+.ver-card{
+    max-width: 880px;
+    margin: 0 auto;
+    background-color: #fffaf3;
+    padding: 36px;
+    border-radius: 16px;
+    box-shadow: 0 14px 25px rgba(0, 0, 0, 0.12);
+}
+
+.ver-header {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+.ver-icon img{
+    width: 20px;
+    height: 20px;
+} 
+
+.ver-icon {
+    width: 46px;
+    height: 46px;
+    background-color: #d1e9d6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ver-title h2 {
+    color: #203b2d;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 3px 0;
+}
+.ver-title p {
+    color: #666761;
+    font-size: 16px;
+    font-weight: bold;
+}
+.ver-form{
+    display: flex;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 9px;
+    padding: 0 15px;
+    height: 55px;
+}
+.input-container img {
+    width: 22px;
+    height: 22px;
+}
+.input-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 19px;
+    color: #3e403d;
+}
+.ver-form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 55px;
+    padding: 0 26px;
+    background-color: #f5c96d;
+    color: #70551f;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: wrap;
+}
+
+.ver-form button:hover {
+    background-color: #eab952;
+}
+
+.ver-form button img {
+    width: 19px;
+    height: 19px;
+}
+
+.content {
+    background-color: #f7f2e8;
+    padding: 30px 24px 22px;
+    border-radius: 10px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 28px;
+}
+.dote {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 9px;
+}
+.dote img {
+    width: 20px;
+    height: 20px;
+}
+
+.done h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #294434;
+}
+.extra{
+    background-color: #f2eee6;
+    color: #565950;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.cards h4 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #54564d;
+    margin: 0 0 7px;
+}
+
+.cards h4 img {
+    width: 16px;
+    height: 16px;
+}
+.cards h3 {
+    color: #30352e;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+.card3 h3 {
+    color: #294b38;
+}
+
+.cards p {
+    color: #6b6c65;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.cert-card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 35px 0;
+    width: 20%;
+    border-radius: 15px;
+    background-color: #F5EEE2;
+    box-shadow: 0 0 10px rgb(205, 201, 201);
+    gap: 20px;
+}
+.icon-cer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+.cert-card p{
+    text-align: center;
+}
+.cert-card strong{
+    font-size: 15px;
+    color: #C8962E;
+}
+.cert{
+    background-color: #f5f3ef;
+    padding: 30px 0 ;
+}
+.cert-container{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.cert-card .green{
+    background-color: #6de8a8;
+}
+.cert-card .yellow{
+    background-color: #ffb516;
+}
+.fabrication {
+    background-color: #fffaf3;
+    padding: 70px 8%;
+    width: 100%;
+    height: auto;
+}
+
+.fabheader {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.fabheader span {
+    color: #8c6b22;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.fabheader h2 {
+    font-size: 36px;
+    color: #253d2d;
+    margin: 8px 0;
+}
+
+.fabheader p {
+    color: #666;
+    font-size: 15px;
+    max-width: 650px;
+    margin: auto;
+}
+
+.fabcards {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+.etape {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.etape-texte {
+    flex: 1;
+}
+
+.etape .one,
+.etape .three,
+.etape .five {
+    text-align: right;
+}
+
+.etape-texte h3 {
+    font-size: 24px;
+    color: #253d2d;
+    margin: 15px 0;
+}
+
+.etape-texte p {
+    font-size: 15px;
+    color: #666;
+}
+
+.etape-image {
+    flex: 1;
+    position: relative;
+    min-width: 0;
+}
+
+.etape-image img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.numero {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.etape .une .numero {
+    left: -15px;
+    right: auto;
+}
+
+.number1 {
+    background-color: #253d2d;
+}
+
+.number2 {
+    background-color: #947000;
+}
+
+.number3 {
+    background-color: #743116;
+}
+
+.etape-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.etape-badge.vert {
+    background-color: #d4e9d9;
+}
+
+.etape-badge.jaune {
+    background-color: #fbe3b4;
+}
+
+.etape-badge.rose {
+    background-color: #f8ddd2;
+}
+.membre {
+    padding: 70px 8%;
+    width: 100%;
+    height: auto;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    gap:20%;
+}
+.head .title-right{
+    color: #30352e;
+    color: #294b38;
+    font-size: 15px;
+    width: 40%;
+}
+.head .title-left p{
+    color: #C8962E;
+}
+.head .title-left h2{
+    color: #30352e;
+    font-size: 30px;
+    margin-top:5px;
+}
+.cards-member{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.card{
+    width: 30%;
+    height: auto;
+    background-color: rgb(217, 218, 218);
+    box-shadow: 0 0 5px rgb(217, 218, 218);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-image img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+.card .card-content{
+    padding: 10px;
+}
+.card-info{
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.card-content .card-role{
+    margin:10px 0 10px 0 ;
+    font-size: 20px;
+}
+.card-content .card-avancer
+{
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: rgb(186, 186, 186);
+    padding:15px 14px;
+}
+.card-footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3px;
+}
+.card-footer img{
+    height: 14px;
+    width: 14px;
+}
+.card-footer p{
+    font-size: 14px;
+}
+
+.line-ver{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #000000;
+}
+
+@media (max-width: 700px) {
+    .cert-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .cert-card{
+        width: 90%;
+    }
+    .head{
+        display: flex;
+        flex-direction: column;
+    }
+    .head .title-left{
+        text-align: center;
+    }
+    .head .title-right{
+        text-align: center;
+        width: 100%;
+    }
+    .cards-member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        gap: 15px;
+    }
+    .cards-member .card{
+        width: 100%;
+    }
+    .tracabilite-icon {
+        width: 60% !important;
+    }
+    .tracabilite-intro h1 {
+        font-size: 30px;
+    }
+    .tracabilite-intro p {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cert-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 16px;
+    }
+    .cert-card {
+        width: 90%;
+    }
+    .ver-form{
+        display: flex;
+        flex-direction: column;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title .dote h3{
+        font-size: 10px;
+    }
+    .title .extra{
+        font-size: 10px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tracabilite-icon {
+        width: 80% !important;
+    }
+    .tracabilite-intro h1 {
+        font-size: 20px;
+    }
+    .tracabilite-intro p {
+        font-size: 12px;
+    }
+    .ver-header .ver-title h2{
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .tracabilite-icon {
+        width: 40%;
+    }
+}
