@@ -1,4 +1,4 @@
-
+/* hero css */
 .hero-icons
 {
     display: flex;
@@ -106,6 +106,8 @@
 {
     display: flex;
     flex-direction: row;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2OOpx, 1fr)); */
     align-content: center;
     justify-content: center;
 
@@ -117,10 +119,11 @@
     width: 20px;
 }
 
+/* home css */
 .blocks
 {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1em;
     margin: 2em;
     position: relative;
@@ -155,12 +158,12 @@
     margin: 1em;
 }
 
-
 .background
 {
     background-color:#F4ECDE;
     position: relative;
     bottom: 1em;
+    margin: 2em;
 }
 
 .home-title
@@ -312,11 +315,94 @@
     margin-left: 8em;
 }
 
+.home-sprt
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 2em;
+
+    background-color:darkgray;
+    color: black;
+
+    font-size: 1em;
+}
+.home-title2
+{
+    width: 20em;
+}
+.home-iconss
+{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 20em;
+}
+.home-pic-pstn
+{
+    /* display: flex;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.home-side-img
+{
+    position: relative;
+    top: 10em;
+}
+
+.home-smt
+{
+    
+}
+
+/* home.. */
+.home-cntr
+{
+    display: grid;
+    justify-content: center;
+}
+.home-ST
+{
+    color: #B5562F;
+    margin: 1em;
+    margin-left: 10em;
+}
+.home-blocks3-
+{
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.home-block3
+{
+    background-color: white;
+    border-radius: 1em;
+    margin: 1em;
+
+}
+.home-block3-n
+{
+    color: #FFE0A3;
+    margin: 1em;
+}
+.home-blocks3-txt
+{
+
+}
+.block3-p
+{
+    margin: 2em;
+    justify-content: center;
+}
 
 
 
 
 
+
+
+/* footer css */
 .pied-haut
 {
     display: grid;
