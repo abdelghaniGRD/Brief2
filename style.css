@@ -43,8 +43,10 @@
 }
 
 .buttons{
-    display: flex;
-    gap: 6px;
+    /* display: flex;
+    gap: 6px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .hero-p
 {
@@ -59,21 +61,21 @@
 .button-produits
 {
     width: 15em;
-    height: 3em;
+    height: 4em;
     align-items: center;
+    gap: 1em;
 
     background-color: darkcyan;
     border-radius: 10%;
     color: darkslategray;
     /* opacity: 0.5; */
 
-    margin: 5em;
-    margin-top: 2em;
+    margin: 1em;
 }
 .button-histoire
 {
     width: 15em;
-    height: 3em;
+    height: 4em;
 
     display: flex;
     gap: 1em;
@@ -84,8 +86,7 @@
     color: black;
     border-radius: 20%;
 
-    margin: 5px;
-    margin-top: 2em;
+    margin: 1em;
 }
 .icon-fleche
 {
@@ -347,13 +348,14 @@
 }
 .home-side-img
 {
+    /* position: relative;
+    top: 10em; */
     position: relative;
-    top: 10em;
 }
 
 .home-smt
 {
-    
+    margin: 1em;   
 }
 
 /* home.. */
@@ -367,6 +369,10 @@
     color: #B5562F;
     margin: 1em;
     margin-left: 10em;
+}
+.home-t1
+{
+    justify-content: center;
 }
 .home-blocks3-
 {
@@ -390,6 +396,10 @@
 {
 
 }
+.scan-button
+{
+    background-color: ;
+}
 .block3-p
 {
     margin: 2em;
@@ -406,7 +416,7 @@
 .pied-haut
 {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     background-color: #F4ECDE ;
     justify-content: center; 
     padding: 40px 30px 0 30px;
