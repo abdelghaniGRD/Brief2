@@ -62,7 +62,7 @@ Le header et le footer sont communs aux différentes pages afin de garantir une 
 ## 5. 🛠️ Technologies utilisées
 
 - **HTML5** : structure et contenu des pages.
-- **CSS3** : mise en page, design et responsive design.
+- **CSS** : mise en page.
 - **Git** : gestion des versions et suivi des modifications.
 - **GitHub** : hébergement du code source et collaboration en équipe.
 - **Trello** : planification et suivi des tâches du projet.
