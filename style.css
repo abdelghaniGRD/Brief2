@@ -69,7 +69,6 @@ p {
 .pied-haut {
   display: grid;
   grid-template-columns: auto auto auto auto;
-
   background-color: #f4ecde;
   justify-content: center;
   padding: 40px 30px 0 30px;
