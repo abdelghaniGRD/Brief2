@@ -152,7 +152,7 @@ header {
 .user {
   cursor: pointer;
   display: flex;
-  gap: 1px;
+  gap: 20px;
 }
 
 #profile {
