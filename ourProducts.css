@@ -1,0 +1,497 @@
+/* 1. Box-sizing rule for intuitive sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins */
+* {
+  margin: 0;
+}
+
+/* 3. Allow percentage-based heights and smooth typography */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+}
+
+/* 4. Improve media defaults (prevents images from overflowing containers) */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Inherit fonts for form inputs so they don't look weird */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 6. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+main {
+  background: linear-gradient(354deg, #ffffff, #ffe1a6e8);
+}
+.header .container {
+  padding: 22px 30px;
+}
+.header .container .header-content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 18px 0px;
+}
+.header .container .breadcrumb {
+  width: 50%;
+  margin: 20px 0px;
+}
+.header .container .breadcrumb > p {
+  font-size: 11px;
+  font-weight: 500;
+}
+.header .container .breadcrumb .breadcrumb-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin: 17px 0px;
+  color: #5d4200;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 15px;
+  font-size: 13px;
+  background-color: #ffdda7;
+}
+.header .container .breadcrumb .breadcrumb-text::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #7c5700;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.header .container .header-content .organic-fair-trade {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #f4ede1;
+  padding: 16px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header
+  .container
+  .header-content
+  .organic-fair-trade
+  .purity
+  p:nth-of-type(1) {
+  color: #7c5700;
+  font-weight: 700;
+}
+
+.header
+  .container
+  .header-content
+  .organic-fair-trade
+  .purity
+  p:nth-of-type(2) {
+  color: #2f493a;
+  font-weight: 700;
+}
+.header .container .header-content .organic-fair-trade .green-image {
+  background-color: #2f493a;
+  border-radius: 9px;
+}
+
+.header .container .header-content .organic-fair-trade img {
+  width: 41px;
+}
+.header .container .breadcrumb p:first-of-type {
+  color: #294133;
+}
+
+.container .breadcrumb .introduction .title {
+  color: #183324;
+  margin-bottom: 10px;
+}
+
+main .categories {
+  background-color: #ede6db;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+.category-active {
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 10px;
+  background-color: black;
+  border-radius: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+main .categories .category-item {
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 10px;
+  background-color: #e1e1e1;
+  border-radius: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+main .categories .category-item > p {
+  color: #434343;
+  font-weight: 600;
+}
+.number-active {
+  background-color: #3a3a3a;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #a4a4a4;
+}
+main .categories .category-item .number {
+  background-color: #d6d6d6;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #434343;
+  font-weight: 700;
+}
+main .main-content {
+  margin-top: 30px;
+  font-weight: 400;
+  font-family: math;
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+  margin-bottom: 70px;
+}
+main .main-content .filter {
+  min-width: 327px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+main .main-content .content .products {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  row-gap: 24px;
+}
+main .main-content .content .product {
+  width: 249px;
+  height: 490px;
+  flex-grow: 1;
+  max-width: 320px;
+}
+main .main-content .content .products .product .product-details {
+  background-color: #e7e7e7;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  justify-content: space-between;
+  border-bottom-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+}
+
+main .main-content .content .products .product-details .action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+main
+  .main-content
+  .content
+  .products
+  .product-details
+  .action-buttons
+  .discover::before {
+  content: "👁";
+}
+main
+  .main-content
+  .content
+  .products
+  .product-details
+  .action-buttons
+  .discover {
+  background-color: #252525;
+  color: white;
+  padding: 7px 10px;
+  width: fit-content;
+  border-radius: 15px;
+  font-size: 20px;
+  align-content: center;
+}
+main .main-content .content .products .product-details .action-buttons .title {
+  color: #737373;
+}
+main
+  .main-content
+  .content
+  .products
+  .product-details
+  .action-buttons
+  .price
+  div {
+  font-weight: 600;
+  font-size: 20px;
+}
+main .main-content .content .product .product-details .description {
+  color: #434343;
+}
+
+/* {
+      background-color: #252525;
+    color: white;
+    padding: 8px 20px;
+    width: fit-content;
+    border-radius: 18px;
+} */
+main .main-content .content .products .product .image .text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 11px;
+  background-color: #d4d4d4;
+  padding: 0px 6px;
+  border-radius: 10px;
+  text-align: center;
+  color: #3c3c3c;
+}
+main .main-content .content .products .product .image img {
+  padding: 10px;
+  border-radius: 20px;
+}
+main .main-content .content .product .reviews {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .main-content .content .product .feedbacks {
+  color: gray;
+}
+main .main-content .content .product p.review::before {
+  content: url(icons/etoile.svg);
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 4px;
+}
+main .main-content .content .products .product .image {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  background-color: #f6f6f6;
+}
+main .main-content .content .product .capacity {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e1e1e1;
+  border-radius: 11px;
+}
+
+main .main-content .content .product .capacity .weight {
+  color: #434343;
+  font-weight: 700;
+}
+
+main .main-content .content .product .capacity .quantity {
+  font-weight: 700;
+}
+main .main-content .content .products .product .image .heart {
+  position: absolute;
+  width: 19px;
+  background-color: #e9e7e5;
+  border-radius: 50%;
+  padding: 2px;
+  top: 10px;
+  right: 11px;
+}
+main .main-content .content .pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 45px;
+}
+main .main-content .content .pagination .total-pages {
+  color: #424842;
+}
+main .main-content .content .pagination .pages {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+main .main-content .content .pagination .pages .current-page {
+  padding: 12px 18px;
+  background-color: #183324;
+  color: white;
+  border-radius: 12px;
+}
+main .main-content .content .pagination .pages .page {
+  padding: 12px 18px;
+  background-color: #f4ede1;
+  color: black;
+  border-radius: 12px;
+}
+main .main-content .content .pagination .pages .prev {
+  padding: 10px;
+  background-color: #edeae6;
+  color: #aba8a4;
+  align-content: center;
+  border-radius: 10px;
+}
+
+main .main-content .content .pagination .pages .next {
+  padding: 10px;
+  background-color: #f4ede1;
+  border-radius: 10px;
+}
+
+main .main-content .filter .filtres p {
+  padding: 20px;
+  background-color: #ede6db;
+  color: #183324;
+  font-size: 29px;
+  font-weight: 500;
+}
+main .main-content .filter .certifications,
+main .main-content .filter .capacities {
+  padding: 20px;
+  background-color: #f9f2e6;
+}
+main .main-content .filter .capacities .capacities-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .main-content .filter .certifications .certificate,
+main .main-content .filter .capacities .capacity {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+  gap: 12px;
+}
+
+main .main-content .filter .capacities .capacity {
+  background-color: #f4ede1;
+  padding: 5px 8px;
+  border-radius: 14px;
+}
+main .main-content .filter .certifications .certificate-title,
+main .main-content .filter .capacities .capacity-title {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+main .main-content .filter .certifications .certificate p:nth-of-type(2) {
+  color: gray;
+}
+
+main .main-content .filter .capacities .capacity p:nth-of-type(2) {
+  color: gray;
+}
+main .main-content .filter .capacities .capacity-title p {
+  font-size: 25px;
+  color: #183324;
+}
+main .main-content .filter .certifications .certificate-title > p {
+  font-size: 25px;
+  color: #183324;
+}
+main .main-content .filter .certifications .certificate .checkbox,
+main .main-content .filter .capacities .capacity .checkbox {
+  width: 19px;
+  height: 19px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+main .main-content .filter .certifications .certificate .isCheckboxActive,
+main .main-content .filter .capacities .capacity .isCheckboxActive {
+  background-color: #183324;
+  width: 19px;
+  height: 19px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+main .main-content .filter .certifications .certificate-title img {
+  width: 20px;
+  height: 20px;
+  color: orange;
+  display: inline-block;
+}
+main .commitments {
+  display: flex;
+  justify-content: space-around;
+  background-color: #2f493a;
+  position: relative;
+  height: 110px;
+  align-items: center;
+  color: white;
+}
+
+main .commitments::before {
+  content: "";
+  background-color: #254031;
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  top: 30px;
+  right: 50%;
+}
+
+main .commitments .commitment {
+  position: relative;
+  padding: 12px;
+}
+main .commitments .commitment .img {
+  position: absolute;
+  left: -45px;
+  background-color: #183324;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+main .commitments .commitment .description {
+  color: #9ab8a3;
+}
