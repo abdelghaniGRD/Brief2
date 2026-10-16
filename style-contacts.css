@@ -1,13 +1,14 @@
 CSS
 body {
   margin: 0;
-  background-color: #fff7ec;
+ /* background-color: #fff8ef;*/
   font-family: Arial, sans-serif;
+ 
 }
  
 .hero {
   text-align: center;
-  padding: 70px 20px;
+  padding: 35px 35px;
 }
  
 .herotext {
@@ -22,7 +23,7 @@ body {
  
 h1 {
   font-family: Georgia, serif;
-  font-size: 70px;
+  font-size: 50px;
   color: #1b3322;
   max-width: 1000px;
   margin: 20px auto;
@@ -36,3 +37,182 @@ h1 {
   margin: 0 auto;
 }
  
+.contact-infos-form {
+
+display: flex;
+COLUMN-GAP: 2%;
+
+
+}
+
+.contact-form-header{
+
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    background: aquamarine;
+    border-radius: 10px;
+    margin-bottom: 8%;
+
+}
+
+.image-map img{
+
+  BORDER-RADIUS: 10PX;
+
+  height: 100%;
+  width: 100% ;
+
+}
+
+.text-info-father {
+  DISPLAY: flex;
+  FLEX-DIRECTION: column;
+  GAP: 20PX;
+  border-radius: 10px;
+  width: 800px;
+  height: 800px ;
+}
+
+.contact-form-father{
+
+  background-color: #f4ede1;
+  padding: 50px;
+  border-radius: 10px;
+  margin-left: 40px;
+  width: 1200px;  
+}
+  
+.contact-form {
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  gap: 10%;
+  margin-bottom: 130PX;
+
+}
+.contact-0{
+
+    display: flex;
+    flex-direction: column;
+  
+  
+}
+
+.contact-1{
+
+  display: flex;
+  gap: 80PX    ;
+
+}
+.contact-form .contact-1 input{
+
+ width: 122%;
+
+}  
+
+.contact-2{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+  
+  
+}
+
+.contact-form input{
+
+width: 100%;
+height: 45px;
+
+border-radius: 10px;
+border: 0cm;
+
+}
+
+
+
+.text-info{
+  
+    background-color: aquamarine;
+    PADDING: 5% ; 
+    BORDER-RADIUS: 10PX;
+    
+  }
+
+
+
+
+
+
+
+
+.products legend span {
+  color: #5c6350;
+  font-weight: 500;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  padding: 1.1rem 1.25rem;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #2b2b2b;
+  border: 2px solid transparent;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.card.full {
+  grid-column: 1 / -1;
+}
+
+
+.card input {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  border: 2px solid #777;
+  border-radius: 4px;
+  background: #fff;
+  display: grid;
+  place-content: center;
+  flex-shrink: 0;
+}
+
+.card input::after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background: #5c6350;
+  border-radius: 2px;
+  transform: scale(0);
+  transition: transform 0.12s ease-in-out;
+}
+
+.card input:checked {
+  border-color: #5c6350;
+}
+
+.card input:checked::after {
+  transform: scale(1);
+}
+
+
+.card:has(input:checked) {
+  border-color: #5c6350;
+}
+
