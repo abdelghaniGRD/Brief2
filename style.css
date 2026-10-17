@@ -1,8 +1,6 @@
-* {
-    box-sizing: border-box;
-}
-
+html,
 body {
+    width: 100%;
     margin: 0;
 }
 /* hero css */
@@ -356,13 +354,19 @@ body {
     /* display: flex;
     justify-content: space-around; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px),1fr));
+    /* justify-content: space-between; */
+    gap: 1em;
+    width: 100%;
+    min-width: 0;
 }
 .home-smt
 {
-    width: 30em;
-    /* margin: 5em; */
+    width: 100%;
+    max-width: 30em;
+    min-width: 0;
+    margin: 1em;
+    box-sizing: border-box;
 }
 .women-infos-d
 {
@@ -385,13 +389,15 @@ z-index: 1;
     margin: 1em;
     position: relative;
     width: 100%;
-    flex: 1;
     min-width: 0;
-
+    margin: 0;
+    overflow: hidden;
+    border-radius: 1em;
 }
 .women-infos img
 {
     width: 100%;
+    max-width: 100%;
     object-fit: cover;
     object-position: center;
     display: block;
@@ -631,4 +637,29 @@ border-radius: 50%;
 .main-background
 {
     background-color: #F4ECDE;
+}
+
+
+@media (max-width: 600px) {
+    .blocks,
+    .background,
+    .icon-certifie-home,
+    .home-smt {
+        margin: 1em 0;
+    }
+
+    .hero-p,
+    .home-title2,
+    .scan-txt {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .home-ST {
+        margin-left: 0;
+    }
+
+    .home-panier-button {
+        margin-left: 1em;
+    }
 }
