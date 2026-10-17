@@ -145,6 +145,7 @@ body {
     background-color: whitesmoke;
     border-radius: 1em;
     background-size: 3em;
+    margin: 1em;
 }
 
 .icon-blocks
@@ -359,13 +360,14 @@ body {
     gap: 1em;
     width: 100%;
     min-width: 0;
+    margin: 1em;
 }
 .home-smt
 {
-    width: 100%;
-    max-width: 30em;
-    min-width: 0;
     margin: 1em;
+    width: 100%;
+    max-width: 20em;
+    min-width: 0;
     box-sizing: border-box;
 }
 .women-infos-d
@@ -388,7 +390,7 @@ z-index: 1;
 {
     margin: 1em;
     position: relative;
-    width: 100%;
+    width: 90%;
     min-width: 0;
     margin: 0;
     overflow: hidden;
@@ -396,7 +398,7 @@ z-index: 1;
 }
 .women-infos img
 {
-    width: 100%;
+    width: 90%;
     max-width: 100%;
     object-fit: cover;
     object-position: center;
@@ -404,22 +406,14 @@ z-index: 1;
     height: 480px;
     border-radius: 1em;
 }
-.
-/* {
-    position: relative;
-    margin: 5em;
-    align-content: center;
-    border-radius: 1em;
-    position: ;
-
-} */
-
 
 /* home.. */
+
 .home-cntr
 {
     display: grid;
     justify-content: center;
+    margin: 1em;
 }
 .home-ST
 {
@@ -429,6 +423,7 @@ z-index: 1;
 }
 .home-t1
 {
+    display: grid;
     justify-content: center;
 }
 .home-blocks3-
