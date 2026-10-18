@@ -225,9 +225,9 @@ main .main-content .filter-mobile {
   border-radius: 10px;
   overflow: hidden;
 }
-/* main .main-content .filter-mobile {
+main .main-content .filter-mobile {
   display: none;
-} */
+}
 main .main-content .content .products {
   display: flex;
   gap: 15px;
@@ -278,6 +278,7 @@ main
   border-radius: 15px;
   font-size: 20px;
   align-content: center;
+  text-decoration: none;
 }
 main .main-content .content .products .product-details .action-buttons .title {
   color: #737373;
@@ -515,6 +516,7 @@ main .commitments .commitment .img {
 main .commitments .commitment .description {
   color: #9ab8a3;
 }
+
 @media (max-width: 400px) {
   main .categories {
     padding: 10px;
@@ -775,7 +777,7 @@ main .commitments .commitment .description {
     border: 1px solid black;
     border-radius: 5px;
   }
-
+  /* **************************************** */
   main .main-content .content .products {
     justify-content: center;
   }
@@ -806,6 +808,261 @@ main .commitments .commitment .description {
     top: calc(50%);
     right: unset;
   }
+  main .commitments .commitment {
+    padding: 12px 8px 12px 51px;
+  }
+  main .commitments .commitment .img {
+    top: calc(50% - 22px);
+    left: 0;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 999px) {
+  main .main-content {
+    flex-direction: column;
+  }
+  main .main-content .filter-mobile {
+    display: none;
+  }
+  main .main-content .filter {
+    display: none;
+  }
+  main .main-content .filter-mobile {
+    display: flex;
+
+    position: relative;
+    overflow: visible;
+    background-color: #ede6db;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 23px;
+    padding: 12px;
+  }
+
+  main .main-content .filter-mobile .filtres {
+  }
+
+  main .main-content .filter-mobile .filtres p {
+    background-color: #ede6db;
+    color: #183324;
+    font-size: 27px;
+    font-weight: 500;
+  }
+  /* certifications styles */
+  main .main-content .filter-mobile .certifications .certifications-display {
+    display: none;
+    position: absolute;
+    background-color: #f9f2e6;
+    border-radius: 10px;
+    top: 45px;
+    left: 0;
+    z-index: 2;
+  }
+
+  main
+    .main-content
+    .filter-mobile
+    .certifications
+    .certifications-display
+    .certificate
+    p {
+    text-wrap: nowrap;
+  }
+  main
+    .main-content
+    .filter-mobile
+    .certifications:hover
+    .certifications-display {
+    display: block;
+  }
+
+  main .main-content .filter-mobile .certifications:hover::after {
+    border-color: transparent transparent black transparent;
+    top: calc(50% - 16px);
+  }
+
+  main .main-content .filter-mobile .certifications .certificate-title {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+  }
+
+  main .main-content .filter-mobile .certifications .certificate {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  main .main-content .filter-mobile .certifications {
+    background-color: #f9f2e6;
+    height: fit-content;
+    padding: 10px 28px 10px 10px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  main .main-content .filter-mobile .certifications::after {
+    content: "";
+    border-color: #999999 transparent transparent transparent;
+    border-style: solid;
+    position: absolute;
+    border-width: 11px;
+    top: calc(50% - 5.5px);
+    right: 1px;
+  }
+  main
+    .main-content
+    .filter-mobile
+    .certifications
+    .certificate
+    p:nth-of-type(2) {
+    color: gray;
+  }
+
+  main .main-content .filter-title .certifications .certificate-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  main .main-content .filter-mobile .certifications .certificate-title > p {
+    font-size: 12px;
+    color: #183324;
+    cursor: pointer;
+  }
+
+  main
+    .main-content
+    .filter-mobile
+    .certifications
+    .certificate
+    p:nth-of-type(2) {
+    color: gray;
+  }
+
+  main .main-content .filter-mobile .certifications .certificate .checkbox {
+    width: 19px;
+    height: 19px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  main
+    .main-content
+    .filter-mobile
+    .certifications
+    .certificate
+    .isCheckboxActive,
+  main .main-content .filter-mobile .certifications .certificate-title img {
+    width: 20px;
+    height: 20px;
+    color: orange;
+    display: inline-block;
+  }
+
+  main
+    .main-content
+    .filter-mobile
+    .certifications
+    .certificate
+    .isCheckboxActive {
+    background-color: #183324;
+    width: 19px;
+    height: 19px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  /* capacities styles */
+  main .main-content .filter-mobile .capacities .capacities-display {
+    display: none;
+    position: absolute;
+    background-color: #f9f2e6;
+    border-radius: 10px;
+    top: 45px;
+    left: 0;
+    z-index: 2;
+  }
+
+  main .main-content .filter-mobile .capacities:hover .capacities-display {
+    display: block;
+  }
+
+  main .main-content .filter-mobile .capacities:hover::after {
+    border-color: transparent transparent black transparent;
+    top: calc(50% - 16px);
+  }
+
+  main .main-content .filter-mobile .capacities .capacity-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  main .main-content .filter-mobile .capacities .capacity {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  main .main-content .filter-mobile .capacities {
+    background-color: #f9f2e6;
+    height: fit-content;
+    padding: 10px 28px 10px 10px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  main .main-content .filter-mobile .capacities::after {
+    content: "";
+    border-color: #999999 transparent transparent transparent;
+    border-style: solid;
+    position: absolute;
+    border-width: 11px;
+    top: calc(50% - 5.5px);
+    right: 1px;
+  }
+
+  main .main-content .filter-title .capacities .capacity-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  main .main-content .filter-mobile .capacities .capacity-title > p {
+    font-size: 12px;
+    color: #183324;
+    cursor: pointer;
+  }
+
+  main .main-content .filter-mobile .capacities .capacity .checkbox {
+    width: 19px;
+    height: 19px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  main .main-content .filter-mobile .capacities .capacity .isCheckboxActive,
+  main .main-content .filter-mobile .capacities .capacity-title img {
+    width: 20px;
+    height: 20px;
+    color: orange;
+    display: inline-block;
+  }
+
+  main .main-content .filter-mobile .capacities .capacity .isCheckboxActive {
+    background-color: #183324;
+    width: 19px;
+    height: 19px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
   main .commitments .commitment {
     padding: 12px 8px 12px 51px;
   }
