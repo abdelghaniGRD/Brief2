@@ -1,0 +1,320 @@
+CSS body {
+  margin: 0;
+  /* background-color: #fff8ef;*/
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  text-align: center;
+  padding: 35px 35px;
+}
+
+.herotext {
+  display: inline-block;
+  background-color: #fde8c6;
+  color: #5c3a00;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 18px;
+  border-radius: 30px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 50px;
+  color: #1b3322;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.text {
+  font-size: 20px;
+  color: #4a4a47;
+  line-height: 1.6;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.contact-infos-form {
+  display: flex;
+  column-gap: 2%;
+}
+
+.contact-form-header {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  background: #f4ede1;
+  border-radius: 10px;
+  margin-bottom: 8%;
+}
+
+.image-map img {
+  border-radius: 10px;
+
+  height: 100%;
+  width: 100%;
+}
+
+.text-info-father {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  width: 800px;
+  height: 800px;
+  margin-right: 40px;
+}
+
+.contact-form-father {
+  background-color: #f9f2e6;
+  padding: 50px;
+  border-radius: 10px;
+  margin-left: 40px;
+  width: 1200px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  gap: 10%;
+  margin-bottom: 130px;
+}
+
+.contact-0 {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-1 {
+  display: flex;
+  gap: 80px;
+}
+
+.contact-form .contact-1 input {
+  width: 122%;
+}
+
+.contact-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input {
+  width: 100%;
+  height: 45px;
+
+  border-radius: 10px;
+  border: 0cm;
+}
+
+.text-info {
+  background-color: #f4ede1;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+.products legend span {
+  color: #5c6350;
+  font-weight: 500;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  padding: 1.1rem 1.25rem;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #2b2b2b;
+  border: 2px solid transparent;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.card.full {
+  grid-column: 1 / -1;
+}
+
+.card input {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  border: 2px solid #777;
+  border-radius: 4px;
+  background: #fff;
+  display: grid;
+  place-content: center;
+  flex-shrink: 0;
+}
+
+.card input::after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background: #5c6350;
+  border-radius: 2px;
+  transform: scale(0);
+  transition: transform 0.12s ease-in-out;
+}
+
+.card input:checked {
+  border-color: #5c6350;
+}
+
+.card input:checked::after {
+  transform: scale(1);
+}
+
+.card:has(input:checked) {
+  border-color: #5c6350;
+}
+
+.text-info-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4ede1;
+  padding: 5%;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.contact-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-3 textarea {
+  width: 100%;
+  height: 130px;
+  border-radius: 10px;
+  border: 0cm;
+}
+
+.contact-3 button {
+  width: 30%;
+  height: 45px;
+  background-color: #2f493a;
+  color: #fff;
+  border-radius: 10px;
+  border: 0cm;
+  cursor: pointer;
+}
+
+.faq {
+  padding: 35px;
+  text-align: center;
+}
+
+.faq-header p {
+  color: #4a4a47;
+  margin: 10px 0 40px;
+}
+
+.faq-header h2 {
+  color: #1b3322;
+  margin: 0;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  background-color: #e6e6e6;
+  padding: 0 34px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.faq-item summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 34px 0;
+  color: #1a1a1a;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-right: 3px solid #1a1a1a;
+  border-bottom: 3px solid #1a1a1a;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.faq-item p {
+  color: #4a4a47;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.call-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  background-color: #262626;
+  padding: 40px 45px;
+  margin: 35px;
+  border-radius: 20px;
+}
+
+.call-banner-text h2 {
+  color: #e6e6e6;
+  margin: 0 0 10px;
+}
+
+.call-banner-text p {
+  color: #9a9a9a;
+  margin: 0;
+}
+
+.call-banner-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.call-banner-buttons button {
+  padding: 18px 30px;
+  border: 0cm;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.call-whatsapp {
+  background-color: #a6a6a6;
+  color: #1a1a1a;
+}
+
+.call-phone {
+  background-color: #3a3a3a;
+}
