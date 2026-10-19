@@ -55,10 +55,7 @@ h6 {
 main {
   background: linear-gradient(354deg, #ffffff, #ffe1a6e8);
 }
-header,
-footer {
-  display: none;
-}
+
 .header {
   padding: 0px 27px;
 }
@@ -837,9 +834,6 @@ main .commitments .commitment .description {
     flex-wrap: wrap;
     gap: 23px;
     padding: 12px;
-  }
-
-  main .main-content .filter-mobile .filtres {
   }
 
   main .main-content .filter-mobile .filtres p {
